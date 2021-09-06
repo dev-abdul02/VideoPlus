@@ -12,3 +12,11 @@ The App Uses:
 2. Uses apple VISION framework to detect face and uses CAShape layer to draw face on the screen
 3. AVFoundation for rendering and capture camera
 4. the app take video url.mp4 and buffer it online to play
+
+
+Project made on:
+
+* Xcode version 12+
+* min version iOS 13
+* runs on both iphone and ipad
+
