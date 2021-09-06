@@ -1,0 +1,554 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		838E65A126E5CC3300D55196 /* VideoPlayerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 838E65A026E5CC3300D55196 /* VideoPlayerExtension.swift */; };
+		83D4560B26E3554F00D6D0D0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D4560A26E3554F00D6D0D0 /* AppDelegate.swift */; };
+		83D4560D26E3554F00D6D0D0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D4560C26E3554F00D6D0D0 /* SceneDelegate.swift */; };
+		83D4561726E3555000D6D0D0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83D4561526E3555000D6D0D0 /* LaunchScreen.storyboard */; };
+		83D4562A26E3587100D6D0D0 /* UIViewController+Protocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D4562926E3587100D6D0D0 /* UIViewController+Protocol.swift */; };
+		83D4563126E35C1900D6D0D0 /* VideoPlayerList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D4562F26E35C1900D6D0D0 /* VideoPlayerList.swift */; };
+		83D4563226E35C1900D6D0D0 /* VideoPlayerList.xib in Resources */ = {isa = PBXBuildFile; fileRef = 83D4563026E35C1900D6D0D0 /* VideoPlayerList.xib */; };
+		83D4563426E35CB400D6D0D0 /* VideoPlayerListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D4563326E35CB400D6D0D0 /* VideoPlayerListViewModel.swift */; };
+		83D4563626E3614900D6D0D0 /* BaseNavigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D4563526E3614900D6D0D0 /* BaseNavigation.swift */; };
+		83D4563826E361E500D6D0D0 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D4563726E361E500D6D0D0 /* BaseViewController.swift */; };
+		83D4563B26E370E300D6D0D0 /* ListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D4563926E370E300D6D0D0 /* ListTableViewCell.swift */; };
+		83D4563C26E370E300D6D0D0 /* ListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 83D4563A26E370E300D6D0D0 /* ListTableViewCell.xib */; };
+		83D4563E26E3737100D6D0D0 /* VideoListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D4563D26E3737100D6D0D0 /* VideoListModel.swift */; };
+		83D4564426E378F200D6D0D0 /* VideoPlayerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 83D4564226E378F200D6D0D0 /* VideoPlayerViewController.xib */; };
+		83D4564526E378F200D6D0D0 /* VideoPlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D4564326E378F200D6D0D0 /* VideoPlayerViewController.swift */; };
+		83D4564726E3867100D6D0D0 /* Double+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D4564626E3867100D6D0D0 /* Double+Extension.swift */; };
+		83D4564B26E3A92200D6D0D0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 83D4561326E3555000D6D0D0 /* Assets.xcassets */; };
+		D85599F15FF18D7CE2EE3564 /* Pods_FacetrackingVideoApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ADF5C242F7DDE4251AD3927B /* Pods_FacetrackingVideoApp.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		8080D3641B9F99141AD246DF /* Pods-FacetrackingVideoApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FacetrackingVideoApp.release.xcconfig"; path = "Target Support Files/Pods-FacetrackingVideoApp/Pods-FacetrackingVideoApp.release.xcconfig"; sourceTree = "<group>"; };
+		838E65A026E5CC3300D55196 /* VideoPlayerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayerExtension.swift; sourceTree = "<group>"; };
+		83D4560726E3554F00D6D0D0 /* FacetrackingVideoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FacetrackingVideoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		83D4560A26E3554F00D6D0D0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		83D4560C26E3554F00D6D0D0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		83D4561326E3555000D6D0D0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		83D4561626E3555000D6D0D0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		83D4561826E3555000D6D0D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		83D4562926E3587100D6D0D0 /* UIViewController+Protocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Protocol.swift"; sourceTree = "<group>"; };
+		83D4562F26E35C1900D6D0D0 /* VideoPlayerList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayerList.swift; sourceTree = "<group>"; };
+		83D4563026E35C1900D6D0D0 /* VideoPlayerList.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VideoPlayerList.xib; sourceTree = "<group>"; };
+		83D4563326E35CB400D6D0D0 /* VideoPlayerListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayerListViewModel.swift; sourceTree = "<group>"; };
+		83D4563526E3614900D6D0D0 /* BaseNavigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNavigation.swift; sourceTree = "<group>"; };
+		83D4563726E361E500D6D0D0 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		83D4563926E370E300D6D0D0 /* ListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListTableViewCell.swift; sourceTree = "<group>"; };
+		83D4563A26E370E300D6D0D0 /* ListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListTableViewCell.xib; sourceTree = "<group>"; };
+		83D4563D26E3737100D6D0D0 /* VideoListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoListModel.swift; sourceTree = "<group>"; };
+		83D4564226E378F200D6D0D0 /* VideoPlayerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VideoPlayerViewController.xib; sourceTree = "<group>"; };
+		83D4564326E378F200D6D0D0 /* VideoPlayerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoPlayerViewController.swift; sourceTree = "<group>"; };
+		83D4564626E3867100D6D0D0 /* Double+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+Extension.swift"; sourceTree = "<group>"; };
+		ADF5C242F7DDE4251AD3927B /* Pods_FacetrackingVideoApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FacetrackingVideoApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CAF6E99DD61412E6C22E70B5 /* Pods-FacetrackingVideoApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FacetrackingVideoApp.debug.xcconfig"; path = "Target Support Files/Pods-FacetrackingVideoApp/Pods-FacetrackingVideoApp.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		83D4560426E3554F00D6D0D0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D85599F15FF18D7CE2EE3564 /* Pods_FacetrackingVideoApp.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6AFCF5FDAA4020F3901FFCF1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				ADF5C242F7DDE4251AD3927B /* Pods_FacetrackingVideoApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6B6EDCF619EBCC0320553FA1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CAF6E99DD61412E6C22E70B5 /* Pods-FacetrackingVideoApp.debug.xcconfig */,
+				8080D3641B9F99141AD246DF /* Pods-FacetrackingVideoApp.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		838E659F26E5CC1400D55196 /* VideoPlayerExtension */ = {
+			isa = PBXGroup;
+			children = (
+				838E65A026E5CC3300D55196 /* VideoPlayerExtension.swift */,
+			);
+			path = VideoPlayerExtension;
+			sourceTree = "<group>";
+		};
+		83D455FE26E3554F00D6D0D0 = {
+			isa = PBXGroup;
+			children = (
+				83D4560926E3554F00D6D0D0 /* FacetrackingVideoApp */,
+				83D4560826E3554F00D6D0D0 /* Products */,
+				6B6EDCF619EBCC0320553FA1 /* Pods */,
+				6AFCF5FDAA4020F3901FFCF1 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		83D4560826E3554F00D6D0D0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				83D4560726E3554F00D6D0D0 /* FacetrackingVideoApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		83D4560926E3554F00D6D0D0 /* FacetrackingVideoApp */ = {
+			isa = PBXGroup;
+			children = (
+				83D4563F26E377AC00D6D0D0 /* Screens */,
+				83D4562826E3585600D6D0D0 /* Helpers */,
+				83D4560A26E3554F00D6D0D0 /* AppDelegate.swift */,
+				83D4560C26E3554F00D6D0D0 /* SceneDelegate.swift */,
+				83D4561326E3555000D6D0D0 /* Assets.xcassets */,
+				83D4561526E3555000D6D0D0 /* LaunchScreen.storyboard */,
+				83D4561826E3555000D6D0D0 /* Info.plist */,
+			);
+			path = FacetrackingVideoApp;
+			sourceTree = "<group>";
+		};
+		83D4561E26E3562500D6D0D0 /* VideoPlayerList */ = {
+			isa = PBXGroup;
+			children = (
+				83D4562326E3564600D6D0D0 /* ViewController */,
+				83D4562226E3563F00D6D0D0 /* Protocols */,
+				83D4562126E3563900D6D0D0 /* ViewModel */,
+				83D4562026E3563300D6D0D0 /* View */,
+				83D4561F26E3562E00D6D0D0 /* Model */,
+			);
+			path = VideoPlayerList;
+			sourceTree = "<group>";
+		};
+		83D4561F26E3562E00D6D0D0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				83D4563D26E3737100D6D0D0 /* VideoListModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		83D4562026E3563300D6D0D0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				83D4563926E370E300D6D0D0 /* ListTableViewCell.swift */,
+				83D4563A26E370E300D6D0D0 /* ListTableViewCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		83D4562126E3563900D6D0D0 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				83D4563326E35CB400D6D0D0 /* VideoPlayerListViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		83D4562226E3563F00D6D0D0 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		83D4562326E3564600D6D0D0 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				83D4562F26E35C1900D6D0D0 /* VideoPlayerList.swift */,
+				83D4563026E35C1900D6D0D0 /* VideoPlayerList.xib */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		83D4562826E3585600D6D0D0 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				83D4564826E3870600D6D0D0 /* Navigation */,
+				83D4562926E3587100D6D0D0 /* UIViewController+Protocol.swift */,
+				83D4563726E361E500D6D0D0 /* BaseViewController.swift */,
+				83D4564626E3867100D6D0D0 /* Double+Extension.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		83D4563F26E377AC00D6D0D0 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				83D4564026E377B600D6D0D0 /* VideoPlayer */,
+				83D4561E26E3562500D6D0D0 /* VideoPlayerList */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		83D4564026E377B600D6D0D0 /* VideoPlayer */ = {
+			isa = PBXGroup;
+			children = (
+				838E659F26E5CC1400D55196 /* VideoPlayerExtension */,
+				83D4564126E377E700D6D0D0 /* ViewController */,
+			);
+			path = VideoPlayer;
+			sourceTree = "<group>";
+		};
+		83D4564126E377E700D6D0D0 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				83D4564326E378F200D6D0D0 /* VideoPlayerViewController.swift */,
+				83D4564226E378F200D6D0D0 /* VideoPlayerViewController.xib */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		83D4564826E3870600D6D0D0 /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				83D4563526E3614900D6D0D0 /* BaseNavigation.swift */,
+			);
+			path = Navigation;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		83D4560626E3554F00D6D0D0 /* FacetrackingVideoApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 83D4561B26E3555000D6D0D0 /* Build configuration list for PBXNativeTarget "FacetrackingVideoApp" */;
+			buildPhases = (
+				35E02726A707312660433743 /* [CP] Check Pods Manifest.lock */,
+				83D4560326E3554F00D6D0D0 /* Sources */,
+				83D4560426E3554F00D6D0D0 /* Frameworks */,
+				83D4560526E3554F00D6D0D0 /* Resources */,
+				916D367FB97A34845C0069F3 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FacetrackingVideoApp;
+			productName = FacetrackingVideoApp;
+			productReference = 83D4560726E3554F00D6D0D0 /* FacetrackingVideoApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		83D455FF26E3554F00D6D0D0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					83D4560626E3554F00D6D0D0 = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
+				};
+			};
+			buildConfigurationList = 83D4560226E3554F00D6D0D0 /* Build configuration list for PBXProject "FacetrackingVideoApp" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 83D455FE26E3554F00D6D0D0;
+			productRefGroup = 83D4560826E3554F00D6D0D0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				83D4560626E3554F00D6D0D0 /* FacetrackingVideoApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		83D4560526E3554F00D6D0D0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				83D4563226E35C1900D6D0D0 /* VideoPlayerList.xib in Resources */,
+				83D4564426E378F200D6D0D0 /* VideoPlayerViewController.xib in Resources */,
+				83D4563C26E370E300D6D0D0 /* ListTableViewCell.xib in Resources */,
+				83D4561726E3555000D6D0D0 /* LaunchScreen.storyboard in Resources */,
+				83D4564B26E3A92200D6D0D0 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		35E02726A707312660433743 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FacetrackingVideoApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		916D367FB97A34845C0069F3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FacetrackingVideoApp/Pods-FacetrackingVideoApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FacetrackingVideoApp/Pods-FacetrackingVideoApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FacetrackingVideoApp/Pods-FacetrackingVideoApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		83D4560326E3554F00D6D0D0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				83D4564526E378F200D6D0D0 /* VideoPlayerViewController.swift in Sources */,
+				83D4563626E3614900D6D0D0 /* BaseNavigation.swift in Sources */,
+				838E65A126E5CC3300D55196 /* VideoPlayerExtension.swift in Sources */,
+				83D4563B26E370E300D6D0D0 /* ListTableViewCell.swift in Sources */,
+				83D4562A26E3587100D6D0D0 /* UIViewController+Protocol.swift in Sources */,
+				83D4560B26E3554F00D6D0D0 /* AppDelegate.swift in Sources */,
+				83D4564726E3867100D6D0D0 /* Double+Extension.swift in Sources */,
+				83D4563126E35C1900D6D0D0 /* VideoPlayerList.swift in Sources */,
+				83D4563E26E3737100D6D0D0 /* VideoListModel.swift in Sources */,
+				83D4563826E361E500D6D0D0 /* BaseViewController.swift in Sources */,
+				83D4563426E35CB400D6D0D0 /* VideoPlayerListViewModel.swift in Sources */,
+				83D4560D26E3554F00D6D0D0 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		83D4561526E3555000D6D0D0 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				83D4561626E3555000D6D0D0 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		83D4561926E3555000D6D0D0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		83D4561A26E3555000D6D0D0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		83D4561C26E3555000D6D0D0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CAF6E99DD61412E6C22E70B5 /* Pods-FacetrackingVideoApp.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = Y3L56UY8YR;
+				INFOPLIST_FILE = FacetrackingVideoApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.facetracking;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "Voyager Dev";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		83D4561D26E3555000D6D0D0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8080D3641B9F99141AD246DF /* Pods-FacetrackingVideoApp.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = Y3L56UY8YR;
+				INFOPLIST_FILE = FacetrackingVideoApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.facetracking;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "Voyager Dev";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		83D4560226E3554F00D6D0D0 /* Build configuration list for PBXProject "FacetrackingVideoApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				83D4561926E3555000D6D0D0 /* Debug */,
+				83D4561A26E3555000D6D0D0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		83D4561B26E3555000D6D0D0 /* Build configuration list for PBXNativeTarget "FacetrackingVideoApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				83D4561C26E3555000D6D0D0 /* Debug */,
+				83D4561D26E3555000D6D0D0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 83D455FF26E3554F00D6D0D0 /* Project object */;
+}

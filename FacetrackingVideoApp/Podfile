@@ -1,0 +1,20 @@
+# Uncomment the next line to define a global platform for your project
+ platform :ios, '12.0'
+
+def video_pods
+    pod "PlayerKit"
+end
+
+def ui_pods
+  pod 'MaterialComponents/Slider'
+  pod 'Kingfisher'
+end
+
+target 'FacetrackingVideoApp' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  video_pods
+  ui_pods
+
+end
